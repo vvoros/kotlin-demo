@@ -6,4 +6,7 @@ fun main(args: Array<String>) {
 
   println(customer1)
   println(customer1 == customer2)
+
+  val customer3 = Customer("Doe", "doe@company.com", phone = "123456789", rich = true)
+  println(customer3)
 }

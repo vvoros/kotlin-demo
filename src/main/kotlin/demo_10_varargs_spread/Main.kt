@@ -12,5 +12,5 @@ fun main(args: Array<String>) {
   val numList = intArrayOf(1, 2, 3, 4, 5)
 
   val sum = sumNumbers(1, 2, 3, 4, 5)
-  println(sum)
+  println(sumNumbers(*numList))
 }

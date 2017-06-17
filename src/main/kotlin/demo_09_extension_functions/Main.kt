@@ -1,6 +1,5 @@
 package demo_09_extension_functions
 
-/* hidden function
 fun <T> Collection<T>.joinToString(
   // Assigns default values for arguments
   separator: String = ",",
@@ -20,10 +19,16 @@ fun <T> Collection<T>.joinToString(
 
   return result.toString()
 }
-*/
+
+fun String.lastChar(): Char = this.get(this.length - 1)
 
 fun main(args: Array<String>) {
   val str: String = "My String"
 
   println(str.get(str.length - 1))
+
+  println(str.lastChar())
+
+  val list = arrayListOf(1, 2, 3)
+  println(list.joinToString(";", prefix = "-> "))
 }
